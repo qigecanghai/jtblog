@@ -1,0 +1,32 @@
+1、 作者说明：
+    我(john)加上Tomcat等等准备共同开发这个项目()
+2、 项目整体结构说明：
+    本项目为 springboot 多模块maven项目
+    base 为基础公共模块(jpa,mysql等基础pom写在此)
+    dao 为数据层
+    service 为业务层
+    web 为model展示层
+    依赖关系为：base-->dao-->service-->web (web依赖service,service依赖dao.......这样一来web也就依赖了base)
+    程序入口为：JtblogWebApplication.java
+3、 项目引入
+    (1)idea，那么你 git clone 下来源代码后直接 open 项目既可
+    (2)eclipse，file-import-existing Maven Project
+    ===================================================================================================================
+4、 其他说明：
+    目前写了一个测试添加学生表的整个流程，未加展示页面
+    程序入口为：JtblogWebApplication.java ，运行后浏览器http://localhost:8080/demo/add
+    即可为数据库添加数据
+    数据库我已经以在百度云上建立了
+5、 创建类自动添加注释
+    ctrl+shift+a  填写：File and Code Templates  enter
+    找到include  - file header
+    填入:
+    /**
+     * @ Author     ：johnbarrowman@gmail.com
+     * @ Date       ：Created in ${TIME} ${DATE}
+     * @ Description：${description}
+     * @ Modified By：
+     * @Version:     $version$
+     */
+     =====================================================================================================
+

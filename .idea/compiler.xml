@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="jtblog-base" />
+        <module name="jtblog-dao" />
+        <module name="jtblog-service" />
+        <module name="jtblog-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jtblog" target="1.8" />
+      <module name="jtblog-base" target="1.8" />
+      <module name="jtblog-dao" target="1.8" />
+      <module name="jtblog-service" target="1.8" />
+      <module name="jtblog-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="jtblog" options="-parameters" />
+      <module name="jtblog-base" options="-parameters" />
+      <module name="jtblog-dao" options="-parameters" />
+      <module name="jtblog-service" options="-parameters" />
+      <module name="jtblog-web" options="-parameters" />
+    </option>
+  </component>
+</project>
